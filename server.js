@@ -9,12 +9,11 @@ const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
 const db = knex({
-  // connect to your own database here:
   client: 'pg',
   connection: {
     host : '127.0.0.1:5432',
     user : 'postgre',
-    password : 'T0rchW00d!',
+    password : '[PASSWORD HERE]',
     database : 'face-recognition'
   }
 });
