@@ -1,6 +1,8 @@
 # Face Recognition App Server
 This project was created as a part of the Zero To Mastery Web Developer course. The project is a face recognition app that allows users to register and sign in to submit entries for face recognition. The app keeps track of the number of entries submitted by the user. The server side of the app is built using Node.js and communicates with the client side through an API. The app uses the Clarifai Face Recognition API to get data for the image the user inputs. The app uses PostgreSQL as the database.
 
+*Note: I'm in the process of commenting my code to make it more readable*
+
 ## Getting Started
 These instructions will help you set up the project on your local machine.
 
