@@ -2,7 +2,6 @@ const express = require('express');
 const bcrypt = require('bcrypt-nodejs');
 const cors = require('cors');
 const knex = require('knex');
-// require('dotenv').config();
 
 const register = require('./controllers/register');
 const signin = require('./controllers/signin');
@@ -12,10 +11,8 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'pg',
   connection: {
-    host : process.env.DB_HOST,
-    user : process.env.DB_USER,
-    password : process.env.DB_PASSWORD,
-    database : process.env.DB_NAME
+    connectionString : process.env.DATABASE_URL,
+    ssl: true,
   }
 });
 
