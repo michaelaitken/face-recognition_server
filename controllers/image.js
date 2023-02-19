@@ -16,7 +16,7 @@ const handleApiCall = (req, res) => {
           model_id: face-detection,
           version_id: '6dc7e46bc9124c5c8824be4822abe105',  // This is optional. Defaults to the latest model version
           inputs: [
-              { data: { image: { url: { req.body.input } } } }
+              { data: { image: { url: req.body.input } } }
           ]
       },
       metadata,
