@@ -36,7 +36,7 @@ const handleApiCall = (req, res) => {
           for (const concept of output.data.concepts) {
               console.log(concept.name + " " + concept.value);
           }
-          res.json(response)
+          res.json(output)
       }
   );
   // app.models
